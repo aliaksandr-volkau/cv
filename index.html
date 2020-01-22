@@ -19,11 +19,28 @@
         <h1>Александр Волков</h1>
         <h2>Ruby on Rails developer</h2>
         <ul>
-          <li>Возраст: 27 лет</li>
+          <li>Возраст: <span id="placeholder"></span></li>
           <li>Местоположение: Республика Беларусь, г. Минск</li>
           <li>Телефон: +375 29 232 28 63</li>
           <li>Почта: volkov-site@mail.ru</li>
         </ul>
+        <script>
+          var DOB = "November 11, 1992";
+          var millisecondsBetweenDOBAnd1970 = Date.parse(DOB);
+          var millisecondsBetweenNowAnd1970 = Date.now();
+          var ageInMilliseconds = millisecondsBetweenNowAnd1970-millisecondsBetweenDOBAnd1970;
+
+          var milliseconds = ageInMilliseconds;
+          var second = 1000;
+          var minute = second*60;
+          var hour = minute*60;
+          var day = hour*24;
+          var year = day*365; 
+
+          var years = Math.round(milliseconds/year);
+
+          document.getElementById('placeholder').innerHTML = years;
+        </script>
         <div class="row social">
           <div class="two columns"><a href="https://www.facebook.com/aleksander.batumi" target="_blank"><span class="icon-facebook"></span></a></div>
           <div class="two columns"><a href="https://github.com/fixel92" target="_blank"><span class="icon-github-circled"></span></a></div>
@@ -38,8 +55,7 @@
           <li>Ruby</li>
           <li>Ruby on Rails</li>
           <li>Rspec</li>
-          <li>Skeleton</li>
-          <li>Bootstrap</li>
+          <li>Bootstrap</li>          
           <li>SQL</li>
           <li>Git</li>
           <li>Python</li>
@@ -52,15 +68,26 @@
           <li>Витебский государственный университет: 2010-2016<br>
             Специальность: Технология машиностроения<br>
             Квалификация: Инженер</li>
-          <li>Интенсив по Ruby on Rails "Хороший программист"<br>
-            Даты: сентябрь 2019 - январь 2020</li>
         </ul>
-        <h2>Проекты</h2>
+        <h2>Опыт работы</h2>
         <ul>
-          <li><a href="https://github.com/fixel92/ruby-vk-parser" target="_blank">Парсер</a> записей в социальной сети Вконтакте по ключам в постах и обсуждениях для получения лидов: <strong>Ruby</strong></li>
-          <li><a href="https://welcome2georgia.ru" target="_blank">Сайт</a> туристической компании Welcome2Georgia: <strong>Python, Django</strong></li>
-          <li><a href="https://hotel-irida.ru" target="_blank">Сайт</a> апарт-отеля Ирида в Батуми: <strong>Python, Django</strong></li>
-          <li><a href="https://github.com/fixel92/parser" target="_blank">Парсер</a> записей в социальной сети Вконтакте по ключам в в постах и обсуждениях для получения лидов: <strong>Python</strong></li>
+          <li>
+            Удаленная работа (real estate company North Cyprus) <strong>Ruby on Rails - разработчик</strong>: 2018-2019
+            <ul>
+              <li>Исправление багов</li>
+              <li>Разработка нового функционала</li>
+              <li>Интеграция со сторонними сервисами</li>
+              <li>Написание тестов</li>
+            </ul>
+          </li>
+          <li>
+            Фриланс <strong>Python - разработчик</strong>: 2017-2018
+            <ul>
+              <li>Написание парсеров</li>
+              <li>Разработка сайтов</li>
+              <li>Написание скриптов для автоматизации рутинных задач</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
