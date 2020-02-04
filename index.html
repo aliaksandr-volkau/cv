@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .tags .button {
+      padding: 0 15px;
+      height: 30px;
+      line-height: 30px;
+    }
+  </style>
 </head>
 <body>
   <div id="wrapper" class="container">
@@ -49,17 +56,71 @@
       </div>
     </div>
     <div class="row">
-      <div class="five columns">
+      <div class="five columns tags">
         <h2>Навыки</h2>
-        <ul>
-          <li>Ruby</li>
-          <li>Ruby on Rails</li>
-          <li>Rspec</li>
-          <li>Bootstrap</li>          
-          <li>SQL</li>
-          <li>Git</li>
-          <li>Python</li>
-          <li>Django</li>
+        <p>
+          <span class="button">Ruby</span>
+          <span class="button">Ruby on Rails</span>
+          <span class="button">Rspec</span>
+          <span class="button">Bootstrap</span>
+          <span class="button">SQL</span>
+          <span class="button">Git</span>
+          <span class="button">Python</span>
+          <span class="button">Django</span>
+        </p>
+        <h2>Проекты</h2>
+        <ul class="tags">
+          <li>
+              Парсер групп "Вконтакте" для получения лидов
+            <p>
+              <span class="button">VK API</span>
+              <span class="button">SQLite3</span>
+              <span class="button">SMTP</span>
+            </p>
+            <a href="https://github.com/fixel92/ruby-vk-parser" class="button button-primary" target="_blank">Исходники</a>
+          </li>
+          <li>
+            <a href="https://bbq-w-friends.ru/" target="_blank">
+              Сайт для организации мероприятий "Шашлыки"
+            </a>
+            <p>
+              <span class="button">Bootstrap</span>
+              <span class="button">I18n</span>
+              <span class="button">Rspec</span>
+              <span class="button">Devise</span>
+              <span class="button">Amazon S3</span>
+              <span class="button">Postfix</span>
+              <span class="button">ActiveJob</span>
+              <span class="button">Redis</span>
+              <span class="button">Omniauth</span>
+              <span class="button">Passenger</span>
+              <span class="button">Capistrano</span>
+            </p>
+            <a href="https://github.com/fixel92/bbq" class="button button-primary" target="_blank">Исходники</a>
+
+          </li>
+          <li>
+            <a href="https://study-ask-me.herokuapp.com/" target="_blank">
+              Клон приложения "Ask Me"
+            </a>
+            <p>
+              <span class="button">Heroku</span>
+              <span class="button">Jquery</span>
+              <span class="button">Google Recaptcha</span>
+            </p>
+            <a href="https://github.com/fixel92/askme" class="button button-primary" target="_blank">Исходники</a>
+          </li>
+          <li>
+            <a href="https://insomnia-talking-rooms.herokuapp.com/" target="_blank">
+              Анонимный онлайн чат без регистаций и смс
+            </a>
+            <p>
+              <span class="button">Heroku</span>
+              <span class="button">ActionCable</span>
+              <span class="button">Resque</span>
+            </p>
+            <a href="https://github.com/fixel92/insomnia-talking-rooms" class="button button-primary" target="_blank">Исходники</a>
+          </li>
         </ul>
       </div>
       <div class="six columns offset-by-one">
@@ -67,7 +128,7 @@
         <ul>
           <li>Витебский государственный университет: 2010-2016<br>
             Специальность: Технология машиностроения<br>
-            Квалификация: Инженер</li>
+              Квалификация: Инженер</li>
         </ul>
         <h2>Опыт работы</h2>
         <ul>
