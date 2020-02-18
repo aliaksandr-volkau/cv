@@ -2,46 +2,35 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Резюме Александра Волкова - Ruby on Rails разработчика">
-  <title>Александр Волков - Ruby on Rails developer</title>
+  <meta name="description" content="Резюме. Александр Волков — Ruby on Rails разработчик">
+  <title>Александр Волков — Ruby on Rails developer</title>
+  <meta property="og:title" content="Александр Волков — Ruby on Rails developer" />
+  <meta property="og:description" content="Резюме. Александр Волков — Ruby on Rails разработчик" />
+  <meta property="og:type" content="person" />
+  <meta property="og:url" content="https://fixel92.github.io/cv/" />
+  <meta property="og:image" content="https://fixel92.github.io/cv/img/cv-img.jpg" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .tags .button {
-      padding: 0 15px;
-      height: 30px;
-      line-height: 30px;
-    }
-    .tags p {
-      margin-top: 1rem;
-    }
-    .work-n-study p {
-      margin-bottom: .5rem;
-    }
-    li {
-      list-style-type: none;
-    }
-    li a {
-      color: #1980a5;
-    }
+
   </style>
 </head>
 <body>
-  <div id="wrapper" class="container">
+  <div id="wrapper" class="container" itemscope itemtype="http://schema.org/Person">
     <div class="row">
       <div class="four columns">
-        <img src="img/cv-img.jpg" class="u-max-full-width" alt="Фото">
+        <img src="img/cv-img.jpg" itemprop="image" class="u-max-full-width" alt="Фото">
       </div>
       <div class="six columns offset-by-two text-center">
-        <h1>Александр Волков</h1>
-        <h2>Ruby on Rails developer</h2>
-        <ul>
+        <h1 itemprop="name">Александр Волков</h1>
+        <h2 itemprop="jobTitle">Ruby on Rails developer</h2>
+        <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <li>Возраст: <span id="placeholder"></span></li>
-          <li>Местоположение: Республика Беларусь, г. Минск</li>
-          <li>Телефон: +375 29 232 28 63</li>
-          <li>Почта: volkov-site@mail.ru</li>
+          <li itemprop="addressLocality">Местоположение: Республика Беларусь, г. Минск</li>
+          <li itemprop="telephone">Телефон: +375 29 232 28 63</li>
+          <li itemprop="email">Почта: volkov-site@mail.ru</li>
         </ul>
         <script>
           var DOB = "November 11, 1992";
@@ -150,7 +139,7 @@
         <ul>
           <li>
             2018 — 2019
-            <p><strong>Ruby on Rails - разработчик</strong></p>
+            <p><strong>Ruby on Rails — разработчик</strong></p>
             Удаленная работа (real estate company North Cyprus)
             <ul>
               <li>Исправление багов</li>
@@ -162,7 +151,7 @@
           </li>
           <li>
             2017 —  2018
-            <p> <strong>Python - разработчик</strong></p>
+            <p> <strong>Python — разработчик</strong></p>
             Фриланс
             <ul>
               <li>Написание парсеров</li>
