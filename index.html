@@ -24,28 +24,11 @@
         <h1 itemprop="name">Александр Волков</h1>
         <h2 itemprop="jobTitle">Ruby on Rails developer</h2>
         <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <li>Возраст: <span id="placeholder"></span></li>
+          <li>Возраст: 27</li>
           <li itemprop="addressLocality">Местоположение: Республика Беларусь, г. Минск</li>
           <li itemprop="telephone">Телефон: +375 29 232 28 63</li>
           <li itemprop="email">Почта: volkov-site@mail.ru</li>
         </ul>
-        <script>
-          var DOB = "November 11, 1992";
-          var millisecondsBetweenDOBAnd1970 = Date.parse(DOB);
-          var millisecondsBetweenNowAnd1970 = Date.now();
-          var ageInMilliseconds = millisecondsBetweenNowAnd1970-millisecondsBetweenDOBAnd1970;
-
-          var milliseconds = ageInMilliseconds;
-          var second = 1000;
-          var minute = second*60;
-          var hour = minute*60;
-          var day = hour*24;
-          var year = day*365; 
-
-          var years = Math.round(milliseconds/year);
-
-          document.getElementById('placeholder').innerHTML = years;
-        </script>
         <div class="row social">
           <div class="two columns"><a href="https://www.facebook.com/aleksander.batumi" target="_blank"><span class="icon-facebook"></span></a></div>
           <div class="two columns"><a href="https://github.com/fixel92" target="_blank"><span class="icon-github-circled"></span></a></div>
@@ -149,6 +132,17 @@
         </ul>
         <h2>Опыт работы</h2>
         <ul>
+          <hr>
+          <li>
+            2020 — Настоящее время
+            <p><strong>Data Quality Engineer(Ruby)</strong></p>
+            Profitero
+            <ul>
+              <li>Написание парсеров</li>
+              <li>Сбор и структурирование данных</li>
+            </ul>
+          </li>
+          <hr>
           <li>
             2018 — 2019
             <p><strong>Ruby on Rails — разработчик</strong></p>
@@ -161,6 +155,7 @@
               <li>Верстка</li>
             </ul>
           </li>
+          <hr>
           <li>
             2017 —  2018
             <p> <strong>Python — разработчик</strong></p>
@@ -172,6 +167,7 @@
               <li>Написание скриптов для автоматической подачи объявлений на сайтах</li>
             </ul>
           </li>
+          <hr>
         </ul>
       </div>
     </div>
